@@ -121,4 +121,46 @@
   <data name="Board" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Board.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Chess_Pieces___Advisor__Black_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chess pieces - advisor (black).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chess_Pieces___Advisor__Red_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chess pieces - advisor (red).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chess_Pieces___Cannon__Black_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chess pieces - cannon (black).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chess_Pieces___Cannon__Red_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chess pieces - cannon (red).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chess_Pieces___Chariot__Black_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chess pieces - chariot (black).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chess_Pieces___Chariot__Red_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chess pieces - chariot (red).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chess_Pieces___Elephant__Black_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chess pieces - elephant (black).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chess_Pieces___Elephant__Red_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chess pieces - elephant (red).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chess_Pieces___General__Black_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chess pieces - general (black).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chess_Pieces___General__Red_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chess pieces - general (red).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chess_Pieces___Horse__Black_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chess pieces - horse (black).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chess_Pieces___Horse__Red_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chess pieces - horse (red).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chess_Pieces___Soldier__Black_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chess pieces - soldier (black).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chess_Pieces___Soldier__Red_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\chess pieces - soldier (red).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

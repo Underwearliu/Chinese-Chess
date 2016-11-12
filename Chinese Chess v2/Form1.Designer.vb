@@ -23,19 +23,21 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.PlayerTurn = New System.Windows.Forms.PictureBox()
+        CType(Me.PlayerTurn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(36, 3)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 0
         '
         'Timer1
         '
+        '
+        'PlayerTurn
+        '
+        Me.PlayerTurn.Location = New System.Drawing.Point(422, 326)
+        Me.PlayerTurn.Name = "PlayerTurn"
+        Me.PlayerTurn.Size = New System.Drawing.Size(25, 24)
+        Me.PlayerTurn.TabIndex = 0
+        Me.PlayerTurn.TabStop = False
         '
         'Form1
         '
@@ -44,15 +46,15 @@ Partial Class Form1
         Me.BackgroundImage = Global.Chinese_Chess_v2.My.Resources.Resources.Board
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(749, 705)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.PlayerTurn)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.PlayerTurn, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents PlayerTurn As System.Windows.Forms.PictureBox
 End Class

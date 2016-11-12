@@ -13,13 +13,12 @@
                     Case 1 To 5
                         BoardX(a) = (a - 1) * 2
                         BoardY(a) = 3
-                        ArrayChessPiece(a) = New ChessPiece(1, My.Resources.ResourceManager.GetObject("Chess Pieces - Soldier (Black).png"), BoardX(a), BoardY(a))
-                        'ArrayChessPiece(a) = New ChessPiece(1, Image.FromFile("C:\Users\Jacky\Documents\Visual Studio 2015\Projects\Chinese Chess v2\Chinese Chess v2\Resources\Chess Pieces - Soldier (Black).png"), BoardX(a), BoardY(a))
+                        ArrayChessPiece(a) = New ChessPiece(1, My.Resources.Chess_Pieces___Soldier__Black_, BoardX(a), BoardY(a))
 
                     Case 6
                         BoardX(a) = 4
                         BoardY(a) = 0
-                        ArrayChessPiece(a) = New ChessPiece(2, My.Resources.ResourceManager.GetObject("Chess Pieces - General (Black).png"), BoardX(a), BoardY(a))
+                        ArrayChessPiece(a) = New ChessPiece(2, My.Resources.Chess_Pieces___General__Black_, BoardX(a), BoardY(a))
 
                     Case 7 To 8
                         If a Mod 2 = 1 Then
@@ -27,7 +26,7 @@
                         Else : BoardX(a) = 8
                         End If
                         BoardY(a) = 0
-                        ArrayChessPiece(a) = New ChessPiece(3, My.Resources.ResourceManager.GetObject("Chess Pieces - Chariot (Black).png"), BoardX(a), BoardY(a))
+                        ArrayChessPiece(a) = New ChessPiece(3, My.Resources.Chess_Pieces___Chariot__Black_, BoardX(a), BoardY(a))
 
                     Case 9 To 10
                         If a Mod 2 = 1 Then
@@ -35,7 +34,7 @@
                         Else BoardX(a) = 7
                         End If
                         BoardY(a) = 0
-                        ArrayChessPiece(a) = New ChessPiece(4, My.Resources.ResourceManager.GetObject("Chess Pieces - Horse (Black).png"), BoardX(a), BoardY(a))
+                        ArrayChessPiece(a) = New ChessPiece(4, My.Resources.Chess_Pieces___Horse__Black_, BoardX(a), BoardY(a))
 
                     Case 11 To 12
                         If a Mod 2 = 1 Then
@@ -43,7 +42,7 @@
                         Else BoardX(a) = 6
                         End If
                         BoardY(a) = 0
-                        ArrayChessPiece(a) = New ChessPiece(5, My.Resources.ResourceManager.GetObject("Chess Pieces - Elephant (Black).png"), BoardX(a), BoardY(a))
+                        ArrayChessPiece(a) = New ChessPiece(5, My.Resources.Chess_Pieces___Elephant__Black_, BoardX(a), BoardY(a))
 
                     Case 13 To 14
                         If a Mod 2 = 1 Then
@@ -51,7 +50,7 @@
                         Else BoardX(a) = 5
                         End If
                         BoardY(a) = 0
-                        ArrayChessPiece(a) = New ChessPiece(6, My.Resources.ResourceManager.GetObject("Chess Pieces - Advisor (Black).png"), BoardX(a), BoardY(a))
+                        ArrayChessPiece(a) = New ChessPiece(6, My.Resources.Chess_Pieces___Advisor__Black_, BoardX(a), BoardY(a))
 
                     Case 15 To 16
                         If a Mod 2 = 1 Then
@@ -59,7 +58,7 @@
                         Else BoardX(a) = 7
                         End If
                         BoardY(a) = 2
-                        ArrayChessPiece(a) = New ChessPiece(7, My.Resources.ResourceManager.GetObject("Chess Pieces - Cannon (Black).png"), BoardX(a), BoardY(a))
+                        ArrayChessPiece(a) = New ChessPiece(7, My.Resources.Chess_Pieces___Cannon__Black_, BoardX(a), BoardY(a))
                 End Select
             Next
 
@@ -68,12 +67,12 @@
                     Case 1 To 5
                         BoardX(b) = (b - 1) * 2
                         BoardY(b) = 6
-                        ArrayChessPiece(b) = New ChessPiece(1, My.Resources.ResourceManager.GetObject("Chess Pieces - Soldier (Red).png"), BoardX(b), BoardY(b))
+                        ArrayChessPiece(b) = New ChessPiece(1, My.Resources.Chess_Pieces___Soldier__Red_, BoardX(b), BoardY(b))
 
                     Case 6
                         BoardX(b) = 4
                         BoardY(b) = 9
-                        ArrayChessPiece(b) = New ChessPiece(2, My.Resources.ResourceManager.GetObject("Chess Pieces - General (Red).png"), BoardX(b), BoardY(b))
+                        ArrayChessPiece(b) = New ChessPiece(2, My.Resources.Chess_Pieces___General__Red_, BoardX(b), BoardY(b))
 
                     Case 7 To 8
                         If b Mod 2 = 1 Then
@@ -81,7 +80,7 @@
                         Else : BoardX(b) = 8
                         End If
                         BoardY(b) = 9
-                        ArrayChessPiece(b) = New ChessPiece(3, My.Resources.ResourceManager.GetObject("Chess Pieces - Chariot (Red).png"), BoardX(b), BoardY(b))
+                        ArrayChessPiece(b) = New ChessPiece(3, My.Resources.Chess_Pieces___Chariot__Red_, BoardX(b), BoardY(b))
 
                     Case 9 To 10
                         If b Mod 2 = 1 Then
@@ -89,7 +88,7 @@
                         Else : BoardX(b) = 7
                         End If
                         BoardY(b) = 9
-                        ArrayChessPiece(b) = New ChessPiece(4, My.Resources.ResourceManager.GetObject("Chess Pieces - Horse (Red).png"), BoardX(b), BoardY(b))
+                        ArrayChessPiece(b) = New ChessPiece(4, My.Resources.Chess_Pieces___Horse__Red_, BoardX(b), BoardY(b))
 
                     Case 11 To 12
                         If b Mod 2 = 1 Then
@@ -97,7 +96,7 @@
                         Else : BoardX(b) = 6
                         End If
                         BoardY(b) = 9
-                        ArrayChessPiece(b) = New ChessPiece(5, My.Resources.ResourceManager.GetObject("Chess Pieces - Elephant (Red).png"), BoardX(b), BoardY(b))
+                        ArrayChessPiece(b) = New ChessPiece(5, My.Resources.Chess_Pieces___Elephant__Red_, BoardX(b), BoardY(b))
 
                     Case 13 To 14
                         If b Mod 2 = 1 Then
@@ -105,7 +104,7 @@
                         Else : BoardX(b) = 5
                         End If
                         BoardY(b) = 9
-                        ArrayChessPiece(b) = New ChessPiece(6, My.Resources.ResourceManager.GetObject("Chess Pieces - Advisor (Red).png"), BoardX(b), BoardY(b))
+                        ArrayChessPiece(b) = New ChessPiece(6, My.Resources.Chess_Pieces___Advisor__Red_, BoardX(b), BoardY(b))
 
                     Case 15 To 16
                         If b Mod 2 = 1 Then
@@ -113,7 +112,7 @@
                         Else : BoardX(b) = 7
                         End If
                         BoardY(b) = 7
-                        ArrayChessPiece(b) = New ChessPiece(7, My.Resources.ResourceManager.GetObject("Chess Pieces - Cannon (Red).png"), BoardX(b), BoardY(b))
+                        ArrayChessPiece(b) = New ChessPiece(7, My.Resources.Chess_Pieces___Cannon__Red_, BoardX(b), BoardY(b))
                 End Select
             Next
         End If

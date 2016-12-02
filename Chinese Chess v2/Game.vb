@@ -1,14 +1,33 @@
 ﻿Public Class Game
 
-    Private Player1 As New Player(True)
-    Private Player2 As New Player(False)
+    Public Sub New()
 
-    Public Sub ActionCheck(ByVal CurrentPlayer As Boolean)
-        If CurrentPlayer = True Then
+        Dim Player1 As New Player(True)         'Setup for Player1
+        Dim Player2 As New Player(False)        'Setup for Player2
 
-        Else
-
-        End If
+        Play(Form1.CurrentPlayer)
 
     End Sub
+
+    Public Sub Play(ByRef CurrentPlayer As Boolean)
+
+        'Do
+
+        'ActionCheck(CurrentPlayer) I AM HERE
+        'Loop
+    End Sub
+
+    Public Sub CheckWin()
+
+    End Sub
+
+    'Public Sub ActionCheck(ByVal CurrentPlayer As Boolean) ' test
+    '    If CurrentPlayer = True Then
+    '       MsgBox("Hello World")
+    '   Else
+    '        MsgBox("Bye World")
+    '    End If
+
+    'End Sub
+
 End Class

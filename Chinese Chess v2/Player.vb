@@ -3,6 +3,8 @@
     Private Side As Boolean '(True = Black; False = Red)
     Private BoardX(16) As Byte
     Private BoardY(16) As Byte
+    Private MouseX As Integer
+    Private MouseY As Integer
 
     Private Sub GiveThemChess(ByVal Side As Boolean)
 
@@ -116,6 +118,10 @@
                 End Select
             Next
         End If
+
+    End Sub
+
+    Public Sub MouseDown(ByVal PosX As Integer, ByVal PosY As Integer)
 
     End Sub
 

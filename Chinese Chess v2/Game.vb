@@ -5,16 +5,12 @@
         Dim Player1 As New Player(True)         'Setup for Player1
         Dim Player2 As New Player(False)        'Setup for Player2
 
-        Play(Form1.CurrentPlayer)
+        'Play(Form1.CurrentPlayer)
 
     End Sub
 
     Public Sub Play(ByRef CurrentPlayer As Boolean)
 
-        'Do
-
-        'ActionCheck(CurrentPlayer) I AM HERE
-        'Loop
     End Sub
 
     Public Sub CheckWin()

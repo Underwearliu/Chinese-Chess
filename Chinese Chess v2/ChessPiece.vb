@@ -11,8 +11,10 @@
 
 
     Public Sub New(ByVal Value As Byte, ByVal Icon As Image, ByVal BoardX As Byte, ByVal BoardY As Byte, ByRef Side As Boolean)
+
         ID = Value
         Side = Side
+        PicBox.Parent = Form1
         PicBox.Width = IntervalX - 22
         PicBox.Height = IntervalY - 11
         PicBox.Image = New Bitmap(Icon, New Size(PicBox.Size))
@@ -20,6 +22,7 @@
         PicBox.Visible = True
         PicBox.BringToFront()
         PicBox.AllowDrop = True
+        'AddHandler PicBox.Click, AddressOf picBox_Click
 
     End Sub
 

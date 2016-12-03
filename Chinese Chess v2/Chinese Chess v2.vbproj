@@ -70,6 +70,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Board.vb" />
     <Compile Include="ChessPiece.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>

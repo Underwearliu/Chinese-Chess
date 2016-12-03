@@ -1,36 +1,44 @@
 ﻿Public Class ChessPiece
 
-    Private ID As Byte
+    Private Value As Byte
     Private PicBox As New PictureBox
     Private Side As Boolean
-    Private Const StartX = 16 'Top left hand corner of the board
-    Private Const StartY = 3  'Top left hand corner of the board
-    Private Const IntervalX As SByte = 82
-    Private Const IntervalY As SByte = 71
+    'Private Const StartX = 16 'Top left hand corner of the board
+    'Private Const StartY = 3  'Top left hand corner of the board
+    'Private Const IntervalX As SByte = 82
+    'Private Const IntervalY As SByte = 71
 
 
 
     Public Sub New(ByVal Value As Byte, ByVal Icon As Image, ByVal BoardX As Byte, ByVal BoardY As Byte, ByRef Side As Boolean)
 
-        ID = Value
+        Value = Value
         Side = Side
         PicBox.Parent = Form1
-        PicBox.Width = IntervalX - 22
-        PicBox.Height = IntervalY - 11
+        PicBox.Width = Game.IntervalX - 22
+        PicBox.Height = Game.IntervalY - 11
         PicBox.Image = New Bitmap(Icon, New Size(PicBox.Size))
-        PicBox.Location = New Point(StartX + (BoardX * IntervalX), StartY + (BoardY * IntervalY))
+        PicBox.Location = New Point(Game.StartX + (BoardX * Game.IntervalX), Game.StartY + (BoardY * Game.IntervalY))
         PicBox.Visible = True
         PicBox.BringToFront()
         PicBox.AllowDrop = True
-        'AddHandler PicBox.Click, AddressOf picBox_Click
+        AddHandler PicBox.Click, AddressOf picBox_Click
 
     End Sub
 
+    Public Sub PlacingPossibles()
 
-    Public Sub Move(ByVal Value As Byte, ByVal Side As Boolean, ByRef BoardX As Byte, BoardY As Byte)
+    End Sub
+
+    Public Sub Move(ByVal Value As Byte, ByVal Side As Boolean, ByRef CoordX As Byte, CoordY As Byte)
+
         Dim Moved As Boolean = False
+        Dim BoardX As Byte
+        Dim BoardY As Byte
         'Dim Possible As Boolean
 
+        BoardX = (CoordX - Game.StartX) Mod Game.IntervalX
+        BoardY = (CoordY - Game.StartY) Mod Game.IntervalY
 
         Select Case Value
             Case 1 'Soldier
@@ -96,4 +104,14 @@
         End Select
     End Sub
 
+    Private Sub picBox_Click(sender As Object, e As EventArgs)
+        Console.WriteLine("{0}", Convert.ToString(PicBox.Location))
+        If Form1.CurrentPlayer = Side Then
+            Move(Value, Side, PicBox.Location.X, PicBox.Location.Y)
+        End If
+    End Sub
+
+    Private Sub ShowPossible()
+
+    End Sub
 End Class

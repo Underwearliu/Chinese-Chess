@@ -5,8 +5,11 @@
     Public PosX As Integer
     Public PosY As Integer
 
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Timer1.Enabled = True
+
         NewGame = New Game
 
 
@@ -26,11 +29,11 @@
 
     End Sub
 
-    Private Sub Form1_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown
+    Private Sub Form1_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown 'For testing purposes
         If e.Button = MouseButtons.Left Then
-            PosX = e.X
-            PosY = e.Y
-            MsgBox(PosX & PosY)
+            'PosX = e.X
+            'PosY = e.Y
+            'MsgBox(PosX & PosY)
         End If
     End Sub
 End Class

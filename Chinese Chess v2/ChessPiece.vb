@@ -3,30 +3,20 @@
     Private Value As Byte
     Private PicBox As New PictureBox
     Private Side As Boolean
-    'Private Const StartX = 16 'Top left hand corner of the board
-    'Private Const StartY = 3  'Top left hand corner of the board
-    'Private Const IntervalX As SByte = 82
-    'Private Const IntervalY As SByte = 71
-
-
 
     Public Sub New(ByVal Value As Byte, ByVal Icon As Image, ByVal BoardX As Byte, ByVal BoardY As Byte, ByRef Side As Boolean)
 
         Value = Value
         Side = Side
         PicBox.Parent = Form1
-        PicBox.Width = Game.IntervalX - 22
-        PicBox.Height = Game.IntervalY - 11
+        PicBox.Width = Board.IntervalX - 22
+        PicBox.Height = Board.IntervalY - 11
         PicBox.Image = New Bitmap(Icon, New Size(PicBox.Size))
-        PicBox.Location = New Point(Game.StartX + (BoardX * Game.IntervalX), Game.StartY + (BoardY * Game.IntervalY))
-        PicBox.Visible = True
+        PicBox.Location = New Point(Board.StartX + (BoardX * Board.IntervalX), Board.StartY + (BoardY * Board.IntervalY))
+        PicBox.Visible = False
         PicBox.BringToFront()
         PicBox.AllowDrop = True
         AddHandler PicBox.Click, AddressOf picBox_Click
-
-    End Sub
-
-    Public Sub PlacingPossibles()
 
     End Sub
 
@@ -37,8 +27,8 @@
         Dim BoardY As Byte
         'Dim Possible As Boolean
 
-        BoardX = (CoordX - Game.StartX) Mod Game.IntervalX
-        BoardY = (CoordY - Game.StartY) Mod Game.IntervalY
+        BoardX = (CoordX - Board.StartX) Mod Board.IntervalX
+        BoardY = (CoordY - Board.StartY) Mod Board.IntervalY
 
         Select Case Value
             Case 1 'Soldier
@@ -107,7 +97,7 @@
     Private Sub picBox_Click(sender As Object, e As EventArgs)
         Console.WriteLine("{0}", Convert.ToString(PicBox.Location))
         If Form1.CurrentPlayer = Side Then
-            Move(Value, Side, PicBox.Location.X, PicBox.Location.Y)
+            'Move(Value, Side, PicBox.Location.X, PicBox.Location.Y)
         End If
     End Sub
 

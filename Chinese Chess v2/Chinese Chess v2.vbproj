@@ -141,6 +141,7 @@
     <Content Include="Resources\Chess Pieces - Soldier %28Red%29.png" />
     <Content Include="Resources\Chess Pieces.png" />
     <Content Include="Resources\Red.png" />
+    <Content Include="Resources\Target.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

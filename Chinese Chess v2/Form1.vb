@@ -17,6 +17,14 @@
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
+        'TEST of display player turn box colour change
+        'If CurrentPlayer = True Then 
+        'CurrentPlayer = False
+        'Else
+        'CurrentPlayer = True
+        'End If
+
+
         If CurrentPlayer = True Then 'Display Player Turn
             PlayerTurn.Image = My.Resources.Black
         Else
@@ -29,11 +37,4 @@
 
     End Sub
 
-    Private Sub Form1_MouseDown(sender As Object, e As MouseEventArgs) Handles MyBase.MouseDown 'For testing purposes
-        If e.Button = MouseButtons.Left Then
-            'PosX = e.X
-            'PosY = e.Y
-            'MsgBox(PosX & PosY)
-        End If
-    End Sub
 End Class

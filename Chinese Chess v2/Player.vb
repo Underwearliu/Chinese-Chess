@@ -1,8 +1,8 @@
 ﻿Public Class Player
     Private ArrayChessPiece(16) As ChessPiece
     Private Side As Boolean '(True = Black; False = Red)
-    Private BoardX(16) As Byte
-    Private BoardY(16) As Byte
+    Private BoardX(16) As Byte  'BoardX of chesspiece
+    Private BoardY(16) As Byte  'BoardY of chesspiece
     Private MouseX As Integer
     Private MouseY As Integer
 

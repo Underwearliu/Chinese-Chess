@@ -3,8 +3,8 @@
     Private Side As Boolean '(True = Black; False = Red)
     Private BoardX(16) As Byte  'BoardX of chesspiece
     Private BoardY(16) As Byte  'BoardY of chesspiece
-    Private MouseX As Integer
-    Private MouseY As Integer
+    'Private MouseX As Integer
+    'Private MouseY As Integer
 
     Private Sub GiveThemChess(ByVal Side As Boolean)
 
@@ -121,14 +121,18 @@
 
     End Sub
 
-    Public Sub MouseDown(ByVal PosX As Integer, ByVal PosY As Integer)
+    'Public Sub MouseDown(ByVal PosX As Integer, ByVal PosY As Integer)
 
-    End Sub
+    'End Sub
 
     Public Sub New(ByVal Side As Boolean)
 
         GiveThemChess(Side)
 
     End Sub
+
+    'Public Function GetPiecePos(ByVal x As Integer, ByVal y As Integer)
+    '    Return
+    'End Function
 
 End Class

@@ -2,6 +2,8 @@
 
     Private Value As Byte
     Private PicBox As New PictureBox
+    Const PicBoxWidth As Integer = Board.IntervalX - 22
+    Const PicBoxHeight As Integer = Board.IntervalY - 11
     Private Side As Boolean
 
     Public Sub New(ByVal Value As Byte, ByVal Icon As Image, ByVal BoardX As Byte, ByVal BoardY As Byte, ByRef Side As Boolean)
@@ -9,13 +11,11 @@
         Value = Value
         Side = Side
         PicBox.Parent = Form1
-        PicBox.Width = Board.IntervalX - 22
-        PicBox.Height = Board.IntervalY - 11
-        PicBox.Image = New Bitmap(Icon, New Size(PicBox.Size))
+        PicBox.Image = New Bitmap(Icon, New Size(PicBoxWidth, PicBoxHeight))
+        PicBox.Size = PicBox.Image.Size
         PicBox.Location = New Point(Board.StartX + (BoardX * Board.IntervalX), Board.StartY + (BoardY * Board.IntervalY))
-        PicBox.Visible = False
-        PicBox.BringToFront()
-        PicBox.AllowDrop = True
+        PicBox.Visible = True
+        'PicBox.BringToFront()
         AddHandler PicBox.Click, AddressOf picBox_Click
 
     End Sub
@@ -97,11 +97,11 @@
     Private Sub picBox_Click(sender As Object, e As EventArgs)
         Console.WriteLine("{0}", Convert.ToString(PicBox.Location))
         If Form1.CurrentPlayer = Side Then
-            'Move(Value, Side, PicBox.Location.X, PicBox.Location.Y)
+            'ShowPossible(Value, Side, PicBox.BoardX, PicBox.Location.Y)
         End If
     End Sub
 
-    Private Sub ShowPossible()
+    Private Sub ShowPossible(ByVal Value As Byte, ByVal Side As Boolean, ByRef CoordX As Byte, CoordY As Byte)
 
     End Sub
 End Class

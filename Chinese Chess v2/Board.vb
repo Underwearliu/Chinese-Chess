@@ -6,7 +6,6 @@
     Public Const BoardX As Byte = 8
     Public Const BoardY As Byte = 9
 
-
     Private PossBox(BoardX, BoardY) As PictureBox
    
 
@@ -34,8 +33,9 @@
         Next
     End Sub
 
+    
 
-    Private Sub possBox_Click(sender As Object, e As EventArgs)
+    Private Sub possBox_Click(sender As Object, e As EventArgs) 
 
     End Sub
 

@@ -121,9 +121,6 @@
 
     End Sub
 
-    'Public Sub MouseDown(ByVal PosX As Integer, ByVal PosY As Integer)
-
-    'End Sub
 
     Public Sub New(ByVal Side As Boolean)
 
@@ -131,8 +128,6 @@
 
     End Sub
 
-    'Public Function GetPiecePos(ByVal x As Integer, ByVal y As Integer)
-    '    Return
-    'End Function
+  
 
 End Class

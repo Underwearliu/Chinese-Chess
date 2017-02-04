@@ -128,6 +128,8 @@
 
     End Sub
 
-  
+    Public Sub InsertPosOnBoard(ByVal BoardX As Byte, ByVal BoardY As Byte, ByVal Side As Boolean)
+
+    End Sub
 
 End Class

@@ -17,14 +17,6 @@
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
 
-        'TEST of display player turn box colour change
-        'If CurrentPlayer = True Then
-        '    CurrentPlayer = False
-        'Else
-        '    CurrentPlayer = True
-        'End If
-
-
         If CurrentPlayer = True Then 'Display Player Turn
             PlayerTurn.Image = My.Resources.Black
         Else

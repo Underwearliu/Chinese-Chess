@@ -3,9 +3,11 @@
 
     Public Sub New()
 
-        Dim Board As New Board
+
         Dim Player1 As New Player(True)         'Setup for Player1
         Dim Player2 As New Player(False)        'Setup for Player2
+
+        Dim Board As New Board
 
         'Play(Form1.CurrentPlayer)
 

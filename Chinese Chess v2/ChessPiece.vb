@@ -1,6 +1,6 @@
 ﻿Public Class ChessPiece
 
-    Private Value As Byte
+    Private ChessValue As Byte
     Private PicBox As New PictureBox
     Private ChessX As Integer
     Private ChessY As Integer
@@ -12,11 +12,9 @@
     Const PicBoxHeight As Integer = Board.IntervalY - 11
 
 
-
-
     Public Sub New(ByVal Value As Byte, ByVal Icon As Image, ByVal BoardX As Byte, ByVal BoardY As Byte, ByRef ChessSide As Boolean)
 
-        Value = Value
+        ChessValue = Value
         If ChessSide = True Then
             Side = True
         Else
@@ -38,15 +36,14 @@
     Private Sub picBox_Click(sender As Object, e As EventArgs)
         'Console.WriteLine("{0}", Convert.ToString(PicBox.Location))
         If Side = Form1.CurrentPlayer Then
-            ChessMove = New Move(Value, Side, ChessX, ChessY)
+            ChessMove = New Move(ChessValue, Side, ChessX, ChessY)
+            MsgBox(ChessValue)
         End If
     End Sub
-
 
     'Public Sub ShowPossible() '(ByVal Value As Byte, ByVal Side As Boolean, ByRef ChessX As Byte, ByRef ChessY As Byte) Maybe useless
     '    MsgBox(ChessX & ChessY & Alive) 'Checking Purposes
 
     'End Sub
-
 
 End Class

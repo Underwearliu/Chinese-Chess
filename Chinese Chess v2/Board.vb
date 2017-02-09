@@ -5,7 +5,7 @@
     Public Const IntervalY As SByte = 71 'For Chesspieces gap
     Public Const BoardX As Byte = 8
     Public Const BoardY As Byte = 9
-    Public PossBox(BoardX, BoardY) As PictureBox
+    Public Shared PossBox(BoardX, BoardY) As PictureBox
 
 
     'Private _Board(BoardX, BoardY) As BoardLocations

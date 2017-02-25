@@ -13,13 +13,25 @@
     Dim XList As New List(Of Byte)
     Dim YList As New List(Of Byte)
 
-    Public Sub New(ByVal Value As Byte, ByVal ChessSide As Boolean, ByRef ChessX As Byte, ByRef Chessy As Byte)
+    Public Sub New(ByVal Value As Byte, ByVal ChessSide As Boolean, ByRef ChessX As Byte, ByRef ChessY As Byte)
+        InsertPossibles(Value, ChessSide, ChessX, ChessY)
+    End Sub
+
+    Private Sub InsertPossibles(ByVal Value As Byte, ByVal ChessSide As Boolean, ByRef ChessX As Byte, ByRef ChessY As Byte)
         Select Case Value
             Case 1 'Soldier
-                If ChessSide Then
-                    If Chessy <= 5 Then
-                        ShowPossible()
+                If ChessSide = True Then
+                    If ChessY >= 3 And ChessY < 9 Then
+                        MakePossVisible(ChessX, ChessY + 1)
                     End If
+                    If ChessY >= 5 And ChessX > 0 Then
+                        MakePossVisible(ChessX + 1, ChessY)
+                    End If
+                    If ChessY >= 5 And ChessX < 9 Then
+                        MakePossVisible(ChessX - 1, ChessY)
+                    End If
+                Else
+
                 End If
             Case 2 'General
             Case 3 'Chariot
@@ -28,10 +40,10 @@
             Case 6 'Advisor
             Case 7 'Cannon
         End Select
+
     End Sub
 
-    Private Sub ShowPossible(ByVal Xs As Byte, ByVal Ys As Byte)
-       Board.PossBox(x,y).
+    Private Sub MakePossVisible(ByVal PossX As Byte, ByVal PossY As Byte)
+        Board.PossBox(PossX, PossY).Visible = True
     End Sub
-
 End Class

@@ -9,7 +9,6 @@
 
         Dim Board As New Board
 
-        'Play(Form1.CurrentPlayer)
 
     End Sub
 

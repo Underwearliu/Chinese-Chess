@@ -3,8 +3,7 @@
     Private Side As Boolean '(True = Black; False = Red)
     Private BoardX(16) As Byte  'BoardX of chesspiece
     Private BoardY(16) As Byte  'BoardY of chesspiece
-    'Private MouseX As Integer
-    'Private MouseY As Integer
+
 
     Private Sub GiveThemChess(ByVal Side As Boolean)
 
@@ -127,9 +126,5 @@
         GiveThemChess(Side)
 
     End Sub
-
-    'Public Sub InsertPosOnBoard(ByVal BoardX As Byte, ByVal BoardY As Byte, ByVal Side As Boolean)
-
-    'End Sub
 
 End Class

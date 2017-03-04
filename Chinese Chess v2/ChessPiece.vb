@@ -40,7 +40,7 @@
         If Side = Form1.CurrentPlayer Then
             Selected = True
             ChessMove = New Move(ChessValue, Side, ChessX, ChessY)
-            MsgBox(ChessValue)
+            'MsgBox(ChessValue) 'Testing Purposes
             Selected = False
             Form1.CurrentPlayer = Not Form1.CurrentPlayer
         End If

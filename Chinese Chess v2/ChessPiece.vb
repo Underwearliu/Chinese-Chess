@@ -9,6 +9,7 @@
     Private Selected As Boolean
     Private ChessMove As Move
 
+
     Const PicBoxWidth As Integer = Board.IntervalX - 22
     Const PicBoxHeight As Integer = Board.IntervalY - 11
 
@@ -46,6 +47,16 @@
         End If
     End Sub
 
+    Public Function getChessX()
+        Return ChessX
+    End Function
 
+    Public Function getChessY()
+        Return ChessY
+    End Function
+
+    Public Function getSide()
+        Return Side
+    End Function
 
 End Class

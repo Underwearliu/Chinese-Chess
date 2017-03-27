@@ -7,8 +7,8 @@
     Private Side As Boolean '(True = Black; False = Red)
     Private Alive As Boolean
     Private Selected As Boolean
+    Private ChessUp As PickUpChess
     Private ChessMove As Move
-
 
     Const PicBoxWidth As Integer = Board.IntervalX - 22
     Const PicBoxHeight As Integer = Board.IntervalY - 11
@@ -38,12 +38,10 @@
 
     Private Sub picBox_Click(sender As Object, e As EventArgs)
         'Console.WriteLine("{0}", Convert.ToString(PicBox.Location))
-        If Side = Form1.CurrentPlayer Then
+        If Side = Form1.CurrentPlayer And Form1.ChessUp = False Then
             Selected = True
-            ChessMove = New Move(ChessValue, Side, ChessX, ChessY)
+            ChessUp = New PickUpChess(ChessValue, Side, ChessX, ChessY)
             'MsgBox(ChessValue) 'Testing Purposes
-            Selected = False
-            Form1.CurrentPlayer = Not Form1.CurrentPlayer
         End If
     End Sub
 
